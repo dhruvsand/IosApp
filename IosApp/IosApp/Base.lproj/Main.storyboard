@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Uo0-BY-d7H">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Qx1-ne-cs3">
+            <objects>
+                <viewController id="Uo0-BY-d7H" customClass="ViewController" customModule="IosApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3lV-LM-gsX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qL4-eX-0DP">
+                                <rect key="frame" x="20" y="56" width="341" height="424.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C7a-bW-gMd">
+                                        <rect key="frame" x="0.0" y="0.0" width="86.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter New Meal" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="opZ-C2-L6w">
+                                        <rect key="frame" x="0.0" y="28.5" width="341" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WX9-lv-d8K">
+                                        <rect key="frame" x="0.0" y="66.5" width="151" height="30"/>
+                                        <state key="normal" title="Set Default Label Text"/>
+                                        <connections>
+                                            <action selector="setDefaultLabelText:" destination="J7f-3T-boD" eventType="touchUpInside" id="cq1-45-fOr"/>
+                                            <action selector="setDefaultLabelText:" destination="Uo0-BY-d7H" eventType="touchUpInside" id="uMr-hO-OVJ"/>
+                                        </connections>
+                                    </button>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="defualt image" translatesAutoresizingMaskIntoConstraints="NO" id="bIY-d7-YM6">
+                                        <rect key="frame" x="0.0" y="104.5" width="320" height="320"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="bIY-d7-YM6" secondAttribute="height" multiplier="1:1" id="1c2-Ah-KTW"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="wh7-uK-42n" appends="YES" id="sN3-UK-qpn"/>
+                                        </connections>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="opZ-C2-L6w" secondAttribute="trailing" id="AFi-Pk-Wi1"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qL4-eX-0DP" firstAttribute="top" secondItem="qsi-gG-d8T" secondAttribute="top" constant="36" id="5dx-x0-6p6"/>
+                            <constraint firstItem="qsi-gG-d8T" firstAttribute="trailing" secondItem="qL4-eX-0DP" secondAttribute="trailing" constant="14" id="85b-yR-agI"/>
+                            <constraint firstItem="qL4-eX-0DP" firstAttribute="leading" secondItem="qsi-gG-d8T" secondAttribute="leading" constant="20" id="iyy-2J-WHR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qsi-gG-d8T"/>
+                    </view>
+                    <connections>
+                        <outlet property="mealNameLabel" destination="C7a-bW-gMd" id="fTw-Vl-p7Z"/>
+                        <outlet property="nameTextField" destination="opZ-C2-L6w" id="Ifi-e8-O9b"/>
+                        <outlet property="photoImageView" destination="bIY-d7-YM6" id="L3r-y9-KNR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="khS-x6-BhB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="J7f-3T-boD" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="wh7-uK-42n">
+                    <connections>
+                        <action selector="selectImageFromPhotoLibrary:" destination="Uo0-BY-d7H" id="itX-bQ-00L"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="173.59999999999999" y="-670.61469265367316"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="defualt image" width="128" height="128"/>
+    </resources>
+</document>

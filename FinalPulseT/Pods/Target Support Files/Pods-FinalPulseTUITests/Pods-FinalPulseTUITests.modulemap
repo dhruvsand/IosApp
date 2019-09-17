@@ -1,0 +1,6 @@
+framework module Pods_FinalPulseTUITests {
+  umbrella header "Pods-FinalPulseTUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Pods_HeartRatePlotterTests {
+  umbrella header "Pods-HeartRatePlotterTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

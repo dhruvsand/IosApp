@@ -1,0 +1,785 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6404AA1C1BAF21084CE370AE /* Pods_HeartRatePlotterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C512DF07F6BE0E1D9675234 /* Pods_HeartRatePlotterUITests.framework */; };
+		6A022560227A0CA700DB5DDF /* ECG2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6A02255F227A0CA700DB5DDF /* ECG2.gif */; };
+		6A3EB7D9226F74CB003D6FAB /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3EB7D8226F74CB003D6FAB /* UIImage+Gif.swift */; };
+		6A3EB7DB226F75D1003D6FAB /* transparentHeart.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6A3EB7DA226F75D1003D6FAB /* transparentHeart.gif */; };
+		6A3EB7DD226FC711003D6FAB /* ECG.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6A3EB7DC226FC710003D6FAB /* ECG.gif */; };
+		6AC7C5A6226946300038EB73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC7C5A5226946300038EB73 /* AppDelegate.swift */; };
+		6AC7C5A8226946300038EB73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC7C5A7226946300038EB73 /* ViewController.swift */; };
+		6AC7C5AB226946300038EB73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AC7C5A9226946300038EB73 /* Main.storyboard */; };
+		6AC7C5AE226946300038EB73 /* HeartRatePlotter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6AC7C5AC226946300038EB73 /* HeartRatePlotter.xcdatamodeld */; };
+		6AC7C5B0226946320038EB73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AC7C5AF226946320038EB73 /* Assets.xcassets */; };
+		6AC7C5B3226946320038EB73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AC7C5B1226946320038EB73 /* LaunchScreen.storyboard */; };
+		6AC7C5BE226946320038EB73 /* HeartRatePlotterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC7C5BD226946320038EB73 /* HeartRatePlotterTests.swift */; };
+		6AC7C5C9226946320038EB73 /* HeartRatePlotterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC7C5C8226946320038EB73 /* HeartRatePlotterUITests.swift */; };
+		6ACBE6D222694FAC0016E08E /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6ACBE6D022694FAC0016E08E /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EF8DFE466EE6FA91D7977F54 /* Pods_HeartRatePlotterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE2ECCC2305CEDAA8D264B4A /* Pods_HeartRatePlotterTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6AC7C5BA226946320038EB73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6AC7C59A226946300038EB73 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6AC7C5A1226946300038EB73;
+			remoteInfo = HeartRatePlotter;
+		};
+		6AC7C5C5226946320038EB73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6AC7C59A226946300038EB73 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6AC7C5A1226946300038EB73;
+			remoteInfo = HeartRatePlotter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6AC8D80D22694F0800AA15A7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6ACBE6D222694FAC0016E08E /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		09121791EB0AEFA8BAD5B0F6 /* Pods-HeartRatePlotter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeartRatePlotter.debug.xcconfig"; path = "Target Support Files/Pods-HeartRatePlotter/Pods-HeartRatePlotter.debug.xcconfig"; sourceTree = "<group>"; };
+		2D2A2BD981B0E1142DBF3832 /* Pods-HeartRatePlotterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeartRatePlotterTests.debug.xcconfig"; path = "Target Support Files/Pods-HeartRatePlotterTests/Pods-HeartRatePlotterTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2D71D11FB32BFDFC0340A83C /* Pods-HeartRatePlotterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeartRatePlotterTests.release.xcconfig"; path = "Target Support Files/Pods-HeartRatePlotterTests/Pods-HeartRatePlotterTests.release.xcconfig"; sourceTree = "<group>"; };
+		3F7BFBA772484F15222BAB8F /* Pods_HeartRatePlotter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeartRatePlotter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A02255F227A0CA700DB5DDF /* ECG2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ECG2.gif; sourceTree = "<group>"; };
+		6A3EB7D8226F74CB003D6FAB /* UIImage+Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
+		6A3EB7DA226F75D1003D6FAB /* transparentHeart.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = transparentHeart.gif; sourceTree = "<group>"; };
+		6A3EB7DC226FC710003D6FAB /* ECG.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ECG.gif; sourceTree = "<group>"; };
+		6AC7C5A2226946300038EB73 /* HeartRatePlotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartRatePlotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AC7C5A5226946300038EB73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6AC7C5A7226946300038EB73 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6AC7C5AA226946300038EB73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6AC7C5AD226946300038EB73 /* HeartRatePlotter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HeartRatePlotter.xcdatamodel; sourceTree = "<group>"; };
+		6AC7C5AF226946320038EB73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6AC7C5B2226946320038EB73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6AC7C5B4226946320038EB73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AC7C5B9226946320038EB73 /* HeartRatePlotterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeartRatePlotterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AC7C5BD226946320038EB73 /* HeartRatePlotterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRatePlotterTests.swift; sourceTree = "<group>"; };
+		6AC7C5BF226946320038EB73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AC7C5C4226946320038EB73 /* HeartRatePlotterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeartRatePlotterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AC7C5C8226946320038EB73 /* HeartRatePlotterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRatePlotterUITests.swift; sourceTree = "<group>"; };
+		6AC7C5CA226946320038EB73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AC8D80122694EA800AA15A7 /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ACBE6CE22694FA50016E08E /* Pods_HeartRatePlotter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_HeartRatePlotter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ACBE6D022694FAC0016E08E /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C512DF07F6BE0E1D9675234 /* Pods_HeartRatePlotterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeartRatePlotterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B364576BA0CE67CEF2BC76EC /* Pods-HeartRatePlotterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeartRatePlotterUITests.release.xcconfig"; path = "Target Support Files/Pods-HeartRatePlotterUITests/Pods-HeartRatePlotterUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BE2ECCC2305CEDAA8D264B4A /* Pods_HeartRatePlotterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeartRatePlotterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD5E9F33B1BBAD7723E0F41C /* Pods-HeartRatePlotterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeartRatePlotterUITests.debug.xcconfig"; path = "Target Support Files/Pods-HeartRatePlotterUITests/Pods-HeartRatePlotterUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E76BEA7A0133050BDDDC0843 /* Pods-HeartRatePlotter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeartRatePlotter.release.xcconfig"; path = "Target Support Files/Pods-HeartRatePlotter/Pods-HeartRatePlotter.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6AC7C59F226946300038EB73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AC7C5B6226946320038EB73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF8DFE466EE6FA91D7977F54 /* Pods_HeartRatePlotterTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AC7C5C1226946320038EB73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6404AA1C1BAF21084CE370AE /* Pods_HeartRatePlotterUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FC37E48FB255A7E2DB997B8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				09121791EB0AEFA8BAD5B0F6 /* Pods-HeartRatePlotter.debug.xcconfig */,
+				E76BEA7A0133050BDDDC0843 /* Pods-HeartRatePlotter.release.xcconfig */,
+				2D2A2BD981B0E1142DBF3832 /* Pods-HeartRatePlotterTests.debug.xcconfig */,
+				2D71D11FB32BFDFC0340A83C /* Pods-HeartRatePlotterTests.release.xcconfig */,
+				CD5E9F33B1BBAD7723E0F41C /* Pods-HeartRatePlotterUITests.debug.xcconfig */,
+				B364576BA0CE67CEF2BC76EC /* Pods-HeartRatePlotterUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6AC7C599226946300038EB73 = {
+			isa = PBXGroup;
+			children = (
+				6ACBE6D022694FAC0016E08E /* Charts.framework */,
+				6AC7C5A4226946300038EB73 /* HeartRatePlotter */,
+				6AC7C5BC226946320038EB73 /* HeartRatePlotterTests */,
+				6AC7C5C7226946320038EB73 /* HeartRatePlotterUITests */,
+				6AC7C5A3226946300038EB73 /* Products */,
+				3FC37E48FB255A7E2DB997B8 /* Pods */,
+				FAAC35C01FD560F47FBEB978 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6AC7C5A3226946300038EB73 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6AC7C5A2226946300038EB73 /* HeartRatePlotter.app */,
+				6AC7C5B9226946320038EB73 /* HeartRatePlotterTests.xctest */,
+				6AC7C5C4226946320038EB73 /* HeartRatePlotterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6AC7C5A4226946300038EB73 /* HeartRatePlotter */ = {
+			isa = PBXGroup;
+			children = (
+				6A3EB7DC226FC710003D6FAB /* ECG.gif */,
+				6A3EB7DA226F75D1003D6FAB /* transparentHeart.gif */,
+				6A02255F227A0CA700DB5DDF /* ECG2.gif */,
+				6AC7C5A5226946300038EB73 /* AppDelegate.swift */,
+				6AC7C5A7226946300038EB73 /* ViewController.swift */,
+				6AC7C5A9226946300038EB73 /* Main.storyboard */,
+				6AC7C5AF226946320038EB73 /* Assets.xcassets */,
+				6AC7C5B1226946320038EB73 /* LaunchScreen.storyboard */,
+				6AC7C5B4226946320038EB73 /* Info.plist */,
+				6AC7C5AC226946300038EB73 /* HeartRatePlotter.xcdatamodeld */,
+				6A3EB7D8226F74CB003D6FAB /* UIImage+Gif.swift */,
+			);
+			path = HeartRatePlotter;
+			sourceTree = "<group>";
+		};
+		6AC7C5BC226946320038EB73 /* HeartRatePlotterTests */ = {
+			isa = PBXGroup;
+			children = (
+				6AC7C5BD226946320038EB73 /* HeartRatePlotterTests.swift */,
+				6AC7C5BF226946320038EB73 /* Info.plist */,
+			);
+			path = HeartRatePlotterTests;
+			sourceTree = "<group>";
+		};
+		6AC7C5C7226946320038EB73 /* HeartRatePlotterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6AC7C5C8226946320038EB73 /* HeartRatePlotterUITests.swift */,
+				6AC7C5CA226946320038EB73 /* Info.plist */,
+			);
+			path = HeartRatePlotterUITests;
+			sourceTree = "<group>";
+		};
+		FAAC35C01FD560F47FBEB978 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6ACBE6CE22694FA50016E08E /* Pods_HeartRatePlotter.framework */,
+				6AC8D80122694EA800AA15A7 /* Charts.framework */,
+				3F7BFBA772484F15222BAB8F /* Pods_HeartRatePlotter.framework */,
+				BE2ECCC2305CEDAA8D264B4A /* Pods_HeartRatePlotterTests.framework */,
+				6C512DF07F6BE0E1D9675234 /* Pods_HeartRatePlotterUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6AC7C5A1226946300038EB73 /* HeartRatePlotter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AC7C5CD226946320038EB73 /* Build configuration list for PBXNativeTarget "HeartRatePlotter" */;
+			buildPhases = (
+				20D03ACA3896E280515FB85E /* [CP] Check Pods Manifest.lock */,
+				6AC7C59E226946300038EB73 /* Sources */,
+				6AC7C59F226946300038EB73 /* Frameworks */,
+				6AC7C5A0226946300038EB73 /* Resources */,
+				C962AFDEF62A6291E347B06E /* [CP] Embed Pods Frameworks */,
+				6AC8D80D22694F0800AA15A7 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HeartRatePlotter;
+			productName = HeartRatePlotter;
+			productReference = 6AC7C5A2226946300038EB73 /* HeartRatePlotter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6AC7C5B8226946320038EB73 /* HeartRatePlotterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AC7C5D0226946320038EB73 /* Build configuration list for PBXNativeTarget "HeartRatePlotterTests" */;
+			buildPhases = (
+				49353AAEC38C9AACC0A718B0 /* [CP] Check Pods Manifest.lock */,
+				6AC7C5B5226946320038EB73 /* Sources */,
+				6AC7C5B6226946320038EB73 /* Frameworks */,
+				6AC7C5B7226946320038EB73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6AC7C5BB226946320038EB73 /* PBXTargetDependency */,
+			);
+			name = HeartRatePlotterTests;
+			productName = HeartRatePlotterTests;
+			productReference = 6AC7C5B9226946320038EB73 /* HeartRatePlotterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6AC7C5C3226946320038EB73 /* HeartRatePlotterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AC7C5D3226946320038EB73 /* Build configuration list for PBXNativeTarget "HeartRatePlotterUITests" */;
+			buildPhases = (
+				5AF868E82B02C006D6D809E4 /* [CP] Check Pods Manifest.lock */,
+				6AC7C5C0226946320038EB73 /* Sources */,
+				6AC7C5C1226946320038EB73 /* Frameworks */,
+				6AC7C5C2226946320038EB73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6AC7C5C6226946320038EB73 /* PBXTargetDependency */,
+			);
+			name = HeartRatePlotterUITests;
+			productName = HeartRatePlotterUITests;
+			productReference = 6AC7C5C4226946320038EB73 /* HeartRatePlotterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6AC7C59A226946300038EB73 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Dhruv Sandesara";
+				TargetAttributes = {
+					6AC7C5A1226946300038EB73 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					6AC7C5B8226946320038EB73 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 6AC7C5A1226946300038EB73;
+					};
+					6AC7C5C3226946320038EB73 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 6AC7C5A1226946300038EB73;
+					};
+				};
+			};
+			buildConfigurationList = 6AC7C59D226946300038EB73 /* Build configuration list for PBXProject "HeartRatePlotter" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6AC7C599226946300038EB73;
+			productRefGroup = 6AC7C5A3226946300038EB73 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6AC7C5A1226946300038EB73 /* HeartRatePlotter */,
+				6AC7C5B8226946320038EB73 /* HeartRatePlotterTests */,
+				6AC7C5C3226946320038EB73 /* HeartRatePlotterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6AC7C5A0226946300038EB73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AC7C5B3226946320038EB73 /* LaunchScreen.storyboard in Resources */,
+				6AC7C5B0226946320038EB73 /* Assets.xcassets in Resources */,
+				6A3EB7DD226FC711003D6FAB /* ECG.gif in Resources */,
+				6A3EB7DB226F75D1003D6FAB /* transparentHeart.gif in Resources */,
+				6AC7C5AB226946300038EB73 /* Main.storyboard in Resources */,
+				6A022560227A0CA700DB5DDF /* ECG2.gif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AC7C5B7226946320038EB73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AC7C5C2226946320038EB73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20D03ACA3896E280515FB85E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HeartRatePlotter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		49353AAEC38C9AACC0A718B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HeartRatePlotterTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5AF868E82B02C006D6D809E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HeartRatePlotterUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C962AFDEF62A6291E347B06E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HeartRatePlotter/Pods-HeartRatePlotter-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HeartRatePlotter/Pods-HeartRatePlotter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6AC7C59E226946300038EB73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AC7C5A8226946300038EB73 /* ViewController.swift in Sources */,
+				6AC7C5A6226946300038EB73 /* AppDelegate.swift in Sources */,
+				6A3EB7D9226F74CB003D6FAB /* UIImage+Gif.swift in Sources */,
+				6AC7C5AE226946300038EB73 /* HeartRatePlotter.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AC7C5B5226946320038EB73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AC7C5BE226946320038EB73 /* HeartRatePlotterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AC7C5C0226946320038EB73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AC7C5C9226946320038EB73 /* HeartRatePlotterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6AC7C5BB226946320038EB73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6AC7C5A1226946300038EB73 /* HeartRatePlotter */;
+			targetProxy = 6AC7C5BA226946320038EB73 /* PBXContainerItemProxy */;
+		};
+		6AC7C5C6226946320038EB73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6AC7C5A1226946300038EB73 /* HeartRatePlotter */;
+			targetProxy = 6AC7C5C5226946320038EB73 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6AC7C5A9226946300038EB73 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6AC7C5AA226946300038EB73 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6AC7C5B1226946320038EB73 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6AC7C5B2226946320038EB73 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6AC7C5CB226946320038EB73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6AC7C5CC226946320038EB73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6AC7C5CE226946320038EB73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09121791EB0AEFA8BAD5B0F6 /* Pods-HeartRatePlotter.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8R6FM9DT7A;
+				INFOPLIST_FILE = HeartRatePlotter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Dhruv-Sandesara.HeartRatePlotter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6AC7C5CF226946320038EB73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E76BEA7A0133050BDDDC0843 /* Pods-HeartRatePlotter.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8R6FM9DT7A;
+				INFOPLIST_FILE = HeartRatePlotter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Dhruv-Sandesara.HeartRatePlotter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6AC7C5D1226946320038EB73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D2A2BD981B0E1142DBF3832 /* Pods-HeartRatePlotterTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8R6FM9DT7A;
+				INFOPLIST_FILE = HeartRatePlotterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Dhruv-Sandesara.HeartRatePlotterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HeartRatePlotter.app/HeartRatePlotter";
+			};
+			name = Debug;
+		};
+		6AC7C5D2226946320038EB73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D71D11FB32BFDFC0340A83C /* Pods-HeartRatePlotterTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8R6FM9DT7A;
+				INFOPLIST_FILE = HeartRatePlotterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Dhruv-Sandesara.HeartRatePlotterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HeartRatePlotter.app/HeartRatePlotter";
+			};
+			name = Release;
+		};
+		6AC7C5D4226946320038EB73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD5E9F33B1BBAD7723E0F41C /* Pods-HeartRatePlotterUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8R6FM9DT7A;
+				INFOPLIST_FILE = HeartRatePlotterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Dhruv-Sandesara.HeartRatePlotterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HeartRatePlotter;
+			};
+			name = Debug;
+		};
+		6AC7C5D5226946320038EB73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B364576BA0CE67CEF2BC76EC /* Pods-HeartRatePlotterUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8R6FM9DT7A;
+				INFOPLIST_FILE = HeartRatePlotterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Dhruv-Sandesara.HeartRatePlotterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HeartRatePlotter;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6AC7C59D226946300038EB73 /* Build configuration list for PBXProject "HeartRatePlotter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AC7C5CB226946320038EB73 /* Debug */,
+				6AC7C5CC226946320038EB73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AC7C5CD226946320038EB73 /* Build configuration list for PBXNativeTarget "HeartRatePlotter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AC7C5CE226946320038EB73 /* Debug */,
+				6AC7C5CF226946320038EB73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AC7C5D0226946320038EB73 /* Build configuration list for PBXNativeTarget "HeartRatePlotterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AC7C5D1226946320038EB73 /* Debug */,
+				6AC7C5D2226946320038EB73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AC7C5D3226946320038EB73 /* Build configuration list for PBXNativeTarget "HeartRatePlotterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AC7C5D4226946320038EB73 /* Debug */,
+				6AC7C5D5226946320038EB73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6AC7C5AC226946300038EB73 /* HeartRatePlotter.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6AC7C5AD226946300038EB73 /* HeartRatePlotter.xcdatamodel */,
+			);
+			currentVersion = 6AC7C5AD226946300038EB73 /* HeartRatePlotter.xcdatamodel */;
+			path = HeartRatePlotter.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6AC7C59A226946300038EB73 /* Project object */;
+}

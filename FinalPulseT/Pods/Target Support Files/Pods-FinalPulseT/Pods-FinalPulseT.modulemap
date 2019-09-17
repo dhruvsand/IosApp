@@ -1,0 +1,6 @@
+framework module Pods_FinalPulseT {
+  umbrella header "Pods-FinalPulseT-umbrella.h"
+
+  export *
+  module * { export * }
+}
